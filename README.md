@@ -1,5 +1,3 @@
-
-
 # VINFO
 
 VINFO is a Python script that fetches detailed information about a car based on its Vehicle Identification Number (VIN) using the National Highway Traffic Safety Administration (NHTSA) API. It allows you to retrieve information such as the car's make, model, year, and other relevant details, and optionally save this information to a text or XML file.
@@ -14,7 +12,7 @@ VINFO is a Python script that fetches detailed information about a car based on 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/VINFO.git
+   git clone https://github.com/Angxers2/VINFO.git
    ```
 
 2. Navigate to the directory:
@@ -56,15 +54,3 @@ For more detailed usage instructions, see the [Help](help.txt) file.
    python3 vinfo.py -v ABC123456789DEF -f car_info.xml
    ```
 
-## Notes
-
-- Make sure to provide a valid VIN (Vehicle Identification Number).
-- Supported file formats for saving the car information are text (txt) and XML (xml).
-- If the filename is not provided, the car information will be displayed in the console.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can copy this entire content and paste it into your README.md file. Adjust the placeholders like `your_username`, `VIN`, `FILENAME`, and any file paths as needed for your project.
