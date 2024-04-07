@@ -1,0 +1,31 @@
+vinfo.py - Fetch car information based on Vehicle Identification Number (VIN) and save it to a file.
+
+Description:
+  This script fetches detailed information about a car based on its Vehicle Identification Number (VIN) using the National Highway Traffic Safety Administration (NHTSA) API. It retrieves information such as the car's make, model, year, and other relevant details and allows you to save this information to a text or XML file.
+
+Usage:
+  python3 vinfo.py -v VIN [-f FILENAME]
+  python3 vinfo.py --help
+
+Options:
+  -v VIN, --vin VIN             Specifies the VIN number of the car for which you want to fetch information.
+  
+  -f FILENAME, --filename FILENAME
+                                Specifies the filename to save the car information. Optional. If not provided, the information will be displayed in the console.
+  
+  --help                        Displays this help message and exits.
+
+Example:
+  1. Fetch car information and display in the console:
+     python3 vinfo.py -v ABC123456789DEF
+  
+  2. Fetch car information and save to a text file:
+     python3 vinfo.py -v ABC123456789DEF -f car_info.txt
+  
+  3. Fetch car information and save to an XML file:
+     python3 vinfo.py -v ABC123456789DEF -f car_info.xml
+
+Notes:
+  - The VIN (Vehicle Identification Number) is a unique code used by the automotive industry to identify individual motor vehicles. Make sure to provide a valid VIN.
+  - The supported file formats for saving the car information are text (txt) and XML (xml).
+  - If the filename is not provided, the car information will be displayed in the console.
